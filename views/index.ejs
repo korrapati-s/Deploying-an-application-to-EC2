@@ -1,0 +1,37 @@
+<head>
+  <title>Cloud Assignment</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script  type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+</head>
+
+
+<body>
+
+  <div class="container" style="margin-top:5%">
+    <form action="/data" method="POST">
+    <div class="row col-md-4">
+  		<label>Enter a number: </label>
+      <input type="text" name="input" class="form-control" >
+    </div>
+    <button class="btn btn-md btn-primary" id="submit">Submit</button>
+  </form>
+  </div>
+  <script>
+
+  $(document).ready(function (){
+
+   $("#submit").click(function (){
+     var input = $('#input').val();
+     console.log(input);
+     });
+  });
+
+  </script>
+
+
+</body>
